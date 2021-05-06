@@ -1,0 +1,36 @@
+<!DOCTYPE html >
+
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+
+</head>
+<body>
+
+欢迎， <span th:text="${loginname}"></span>
+
+<span th:if="${age} < 18">小朋友</span>
+<span th:if="${age} > 35">大叔</span>
+<span th:else>帅哥/美女</span>
+
+，登录</br>
+学生列表</br>
+<table border="1">
+    <tr>
+        <th>用户ID</th>
+        <th>姓名</th>
+        <th>年龄</th>
+
+    </tr>
+    <tr th:each="item:${stuList}">
+        <th th:text="${item.id}"></th>
+        <th th:text="${item.name}"></th>
+        <th th:text="${item.age}"></th>
+
+    </tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html >
+
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>用户列表</title>
+    <script th:src="${#httpServletRequest.getContextPath()+'/js/jquery-1.9.1.min.js'}"></script>
+    <script>
+      $(function(){
+         $("#moon").click(function(){
+            alert("带你去看月亮");
+         });
+      })
+
+    </script>
+</head>
+<body>
+ABC<br>
+<img id="moon" th:src="${#httpServletRequest.getContextPath()+'/imgs/img1.jpg'}" width="300px" height="300px">
+</body>
+</html>
