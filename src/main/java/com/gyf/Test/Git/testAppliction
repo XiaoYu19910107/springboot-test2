@@ -1,0 +1,11 @@
+package com.gyf.Test.Git;
+
+/**
+ * @author xiaoyu
+ * @date 2021/05/06 14:12:25
+ */
+public class TestAppliction {
+    public static void main(String[] args) {
+        System.out.println("本地库合并");
+    }
+}
