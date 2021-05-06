@@ -6,6 +6,6 @@ package com.gyf.Test.Git;
  */
 public class TestAppliction {
     public static void main(String[] args) {
-        System.out.println("本地库合并");
+        System.out.println("远程库合并");
     }
 }
